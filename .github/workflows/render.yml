@@ -1,0 +1,39 @@
+name: Render CRT image
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - terminal.txt
+      - renderer/**
+      - .python-version
+      - .github/workflows/render.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version-file: .python-version
+          cache: pip
+          cache-dependency-path: renderer/requirements.txt
+      - run: pip install -r renderer/requirements.txt
+      - run: python renderer/crt.py terminal.txt crt.png
+      - name: Publish image to the output branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898233+github-actions[bot]@users.noreply.github.com"
+          git switch --orphan output
+          git add --force crt.png
+          git commit -m "Render CRT image from ${GITHUB_SHA::7}"
+          git push --force origin output

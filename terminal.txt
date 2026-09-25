@@ -1,0 +1,18 @@
+<b>kfurtak1024@hal9000</b>:<b>~</b>$ whoami
+Krzysztof Furtak
+software engineer · video games · freediving
+
+<b>kfurtak1024@hal9000</b>:<b>~</b>$ tree ~/projects
+projects
+├── games
+│   └── bansoko         space-themed Soko-Ban clone
+└── tools
+    ├── t0d0            ephemeral day tracker
+    └── zecret          encrypted diary, in the terminal
+
+<b>kfurtak1024@hal9000</b>:<b>~</b>$ cat ~/.contact
+web   krzysztoffurtak.dev
+email contact@krzysztoffurtak.dev
+x     @kfurtak1024
+
+<b>kfurtak1024@hal9000</b>:<b>~</b>$ █

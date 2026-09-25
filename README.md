@@ -1,0 +1,3 @@
+<a href="https://krzysztoffurtak.dev"><img src="https://github.com/kfurtak1024/kfurtak1024/raw/output/crt.png" width="870" alt="kfurtak1024@hal9000:~$ whoami — Krzysztof Furtak: software engineer, video games, freediving. Projects: games — bansoko (space-themed Soko-Ban clone); tools — t0d0 (ephemeral day tracker), zecret (encrypted diary, in the terminal). Contact: krzysztoffurtak.dev, contact@krzysztoffurtak.dev, @kfurtak1024 on X."></a>
+
+<p align="center"><code><a href="https://github.com/kfurtak1024/bansoko">bansoko</a> · <a href="https://github.com/kfurtak1024/t0d0">t0d0</a> · <a href="https://github.com/kfurtak1024/zecret">zecret</a> · <a href="mailto:contact@krzysztoffurtak.dev">email</a></code></p>
